@@ -22,7 +22,6 @@ Partial Class Media_Player
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Media_Player))
         Me.VlcControl1 = New Vlc.DotNet.Forms.VlcControl()
         CType(Me.VlcControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -30,13 +29,13 @@ Partial Class Media_Player
         'VlcControl1
         '
         Me.VlcControl1.BackColor = System.Drawing.Color.Black
-        Me.VlcControl1.Location = New System.Drawing.Point(12, 35)
+        Me.VlcControl1.Location = New System.Drawing.Point(273, 157)
         Me.VlcControl1.Name = "VlcControl1"
-        Me.VlcControl1.Size = New System.Drawing.Size(776, 403)
+        Me.VlcControl1.Size = New System.Drawing.Size(275, 113)
         Me.VlcControl1.Spu = -1
         Me.VlcControl1.TabIndex = 0
         Me.VlcControl1.Text = "VlcControl1"
-        Me.VlcControl1.VlcLibDirectory = CType(resources.GetObject("VlcControl1.VlcLibDirectory"), System.IO.DirectoryInfo)
+        Me.VlcControl1.VlcLibDirectory = Nothing
         Me.VlcControl1.VlcMediaplayerOptions = Nothing
         '
         'Media_Player
