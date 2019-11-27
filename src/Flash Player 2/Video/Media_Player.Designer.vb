@@ -1,4 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+﻿Imports System
+Imports System.IO
+Imports System.Reflection
+Imports System.Windows.Forms
+
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Media_Player
     Inherits System.Windows.Forms.Form
 
@@ -37,6 +42,7 @@ Partial Class Media_Player
         Me.VlcControl1.Text = "VlcControl1"
         Me.VlcControl1.VlcLibDirectory = Nothing
         Me.VlcControl1.VlcMediaplayerOptions = Nothing
+
         '
         'Media_Player
         '
