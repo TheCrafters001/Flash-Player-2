@@ -28,7 +28,9 @@ Partial Class SplashScreen
         '
         'Label1
         '
-        Me.Label1.Location = New System.Drawing.Point(388, 193)
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(528, 423)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(100, 48)
         Me.Label1.TabIndex = 0
@@ -37,8 +39,10 @@ Partial Class SplashScreen
         '
         'Label2
         '
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(12, 148)
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(12, 378)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(218, 93)
         Me.Label2.TabIndex = 1
@@ -49,7 +53,8 @@ Partial Class SplashScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(500, 250)
+        Me.BackgroundImage = Global.Flash_Player_2.My.Resources.Resources.Splash
+        Me.ClientSize = New System.Drawing.Size(640, 480)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None

@@ -133,6 +133,12 @@
     <Compile Include="SplashScreen.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Video\MediaPlayer_Controls.Designer.vb">
+      <DependentUpon>MediaPlayer_Controls.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Video\MediaPlayer_Controls.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Video\Media_Player.Designer.vb">
       <DependentUpon>Media_Player.vb</DependentUpon>
     </Compile>
@@ -158,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SplashScreen.resx">
       <DependentUpon>SplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Video\MediaPlayer_Controls.resx">
+      <DependentUpon>MediaPlayer_Controls.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Video\Media_Player.resx">
       <DependentUpon>Media_Player.vb</DependentUpon>
@@ -220,6 +229,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Strip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Splash.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
