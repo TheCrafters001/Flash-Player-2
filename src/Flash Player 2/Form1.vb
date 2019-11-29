@@ -1,10 +1,4 @@
-﻿Imports Vlc
-Imports AxWMPLib
-Imports Vlc.DotNet.Core
-Imports Vlc.DotNet.Forms
-Imports Vlc.DotNet.Forms.VlcControl
-Imports Vlc.DotNet.Wpf.VlcControl
-Imports Vlc.DotNet.Wpf
+﻿Imports AxWMPLib
 Imports System
 Imports System.IO
 Imports System.Reflection
@@ -16,10 +10,12 @@ Public Class Form1
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim currentAssembly = Assembly.GetEntryAssembly()
-        Dim currentDirectory = New FileInfo(currentAssembly.Location).DirectoryName
-        Media_Player.VlcControl1.VlcLibDirectory = New DirectoryInfo(Path.Combine(currentDirectory, "libvlc", If(IntPtr.Size = 4, "win-x86", "win-x64")))
         Media_Player.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Flash_Player.Show()
         Me.Close()
     End Sub
 End Class

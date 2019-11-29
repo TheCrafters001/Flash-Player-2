@@ -1,29 +1,23 @@
-﻿Imports Vlc
-Imports AxWMPLib
-Imports Vlc.DotNet.Core
-Imports Vlc.DotNet.Forms
-Imports Vlc.DotNet.Forms.VlcControl
-Imports Vlc.DotNet.Wpf.VlcControl
-Imports Vlc.DotNet.Wpf
+﻿Imports AxWMPLib
 Imports System
 Imports System.IO
 Imports System.Reflection
 Imports System.Windows.Forms
 
-' <summary>
-' When the Vlc control needs to find the location of the libvlc.dll.
-' You could have set the VlcLibDirectory in the designer, but for this sample, we are in AnyCPU mode, And we don't know the process bitness.
-' </summary>
-' <param name="sender"></param>
-' <param name="e"></param>
-
 Public Class Media_Player
     Private Sub Media_Player_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
-    Private Sub vlcControl_VlcLibDirectoryNeeded(ByVal sender As Object, ByVal e As Vlc.DotNet.Forms.VlcLibDirectoryNeededEventArgs)
-        Dim currentAssembly = Assembly.GetEntryAssembly()
-        Dim currentDirectory = New FileInfo(currentAssembly.Location).DirectoryName
-        e.VlcLibDirectory = New DirectoryInfo(Path.Combine(currentDirectory, "libvlc", If(IntPtr.Size = 4, "win-x86", "win-x64")))
+
+    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
+        About.Show()
+    End Sub
+
+    Private Sub OpenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenToolStripMenuItem.Click
+        OpenFileDialog1.Filter = "All Supported Formats (.asf, .wma, .wmv, .wm, .asx, .wax, .wvx, .wmx, .wpl, .dvr-ms, .wmd, .avi, .mpg, .mpeg, .m1v, .mp2, .mp3, .mpa, .mpe, .m3u, .mid, .midi, .rmi, .aif, .aifc, .aiff, .au, .snd, .wav, .cda, .ivf, .mov, .m4a, .mp4, .m4v, .mp4v, .3g2, .3gp2, .3gp, .3gpp, .aac, .adt, .adts, .m2ts, .flac)|*.asf;*.wma;*.wmv;*.wm;*.asx;*.wax;*.wvx;*.wmx;*.wpl;*.dvr-ms;*.wmd;*.avi;*.mpg;*.mpeg;*.m1v;*.mp2;*.mp3;*.mpa;*.mpe;*.m3u;*.mid;*.midi;*.rmi;*.aif;*.aifc;*.aiff;*.au;*.snd;*.wav;*.cda;*.ivf;*.mov;*.m4a;*.mp4;*.m4v;*.mp4v;*.3g2;*.3gp2;*.3gp;*.3gpp;*.aac;*.adt;*.adts;*.m2ts;*.flac"
+        OpenFileDialog1.FilterIndex = 2
+        OpenFileDialog1.RestoreDirectory = True
+        OpenFileDialog1.ShowDialog()
+        AxWindowsMediaPlayer1.URL = OpenFileDialog1.FileName()
     End Sub
 End Class
