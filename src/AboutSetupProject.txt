@@ -1,0 +1,4 @@
+The Setup project is for my custom installer. Yes, it does collect some information,
+but only needed information, such as install location, install for all users,
+etc. This is not made for people to build a custom installer. This is for me to use
+along side with the REAL setup file. 
