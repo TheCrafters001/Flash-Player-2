@@ -117,13 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="RichTextBox1.Text" xml:space="preserve">
-    <value>Welcome to the setup for TheCrafters001 Flash Player 2! This will allow you to install this program to your computer.
-
-This program allows you to play flash games, listen to your music, and watch videos, all in one package!
-
-I recommend that you save any unsaved work, and close any running programs. This installer is going to install the whole program to your computer.
-
-Once you have done that, you can click "Next &gt;" when you are ready to install.</value>
-  </data>
+  <metadata name="Timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>
