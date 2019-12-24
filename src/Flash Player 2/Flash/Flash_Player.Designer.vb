@@ -28,12 +28,10 @@ Partial Class Flash_Player
         Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CloseGameToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.AboutToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.AxShockwaveFlash1 = New AxShockwaveFlashObjects.AxShockwaveFlash()
-        Me.CloseGameToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.AxShockwaveFlash1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -73,23 +71,19 @@ Partial Class Flash_Player
         Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
+        'CloseGameToolStripMenuItem
+        '
+        Me.CloseGameToolStripMenuItem.Enabled = False
+        Me.CloseGameToolStripMenuItem.Name = "CloseGameToolStripMenuItem"
+        Me.CloseGameToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CloseGameToolStripMenuItem.Text = "Close Game"
+        '
         'AboutToolStripMenuItem
         '
-        Me.AboutToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HelpToolStripMenuItem, Me.ToolStripSeparator2, Me.AboutToolStripMenuItem1})
+        Me.AboutToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem1})
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
         Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(52, 20)
         Me.AboutToolStripMenuItem.Text = "About"
-        '
-        'HelpToolStripMenuItem
-        '
-        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.HelpToolStripMenuItem.Text = "Help"
-        '
-        'ToolStripSeparator2
-        '
-        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(177, 6)
         '
         'AboutToolStripMenuItem1
         '
@@ -108,13 +102,6 @@ Partial Class Flash_Player
         Me.AxShockwaveFlash1.OcxState = CType(resources.GetObject("AxShockwaveFlash1.OcxState"), System.Windows.Forms.AxHost.State)
         Me.AxShockwaveFlash1.Size = New System.Drawing.Size(776, 411)
         Me.AxShockwaveFlash1.TabIndex = 1
-        '
-        'CloseGameToolStripMenuItem
-        '
-        Me.CloseGameToolStripMenuItem.Enabled = False
-        Me.CloseGameToolStripMenuItem.Name = "CloseGameToolStripMenuItem"
-        Me.CloseGameToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.CloseGameToolStripMenuItem.Text = "Close Game"
         '
         'Flash_Player
         '
@@ -142,8 +129,6 @@ Partial Class Flash_Player
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents HelpToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
     Friend WithEvents AboutToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents AxShockwaveFlash1 As AxShockwaveFlashObjects.AxShockwaveFlash
     Friend WithEvents CloseGameToolStripMenuItem As ToolStripMenuItem

@@ -35,6 +35,7 @@ Partial Class MediaPlayer_Controls
         Me.TrackBar2 = New System.Windows.Forms.TrackBar()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -130,6 +131,7 @@ Partial Class MediaPlayer_Controls
         '
         'Button5
         '
+        Me.Button5.Enabled = False
         Me.Button5.Location = New System.Drawing.Point(251, 76)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(52, 23)
@@ -137,11 +139,21 @@ Partial Class MediaPlayer_Controls
         Me.Button5.Text = "Rewind"
         Me.Button5.UseVisualStyleBackColor = True
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(12, 156)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(46, 13)
+        Me.Label3.TabIndex = 11
+        Me.Label3.Text = "{0} / {1}"
+        '
         'MediaPlayer_Controls
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(384, 261)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.ProgressBar2)
@@ -177,4 +189,5 @@ Partial Class MediaPlayer_Controls
     Friend WithEvents TrackBar2 As TrackBar
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
+    Friend WithEvents Label3 As Label
 End Class

@@ -10,14 +10,17 @@
         Media_Player.AxWindowsMediaPlayer1.settings.volume = TrackBar1.Value
         Label1.Text = String.Format("Volume: {0}%", ((ProgressBar1.Value / ProgressBar1.Maximum) * 100).ToString("F2"))
         If Media_Player.AxWindowsMediaPlayer1.URL = "" Then
+            Label3.Text = "Nothing Selected."
 
         ElseIf Not Media_Player.AxWindowsMediaPlayer1.URL = "" Then
             ProgressBar2.Maximum = Media_Player.AxWindowsMediaPlayer1.currentMedia.duration
             ProgressBar2.Value = Media_Player.AxWindowsMediaPlayer1.Ctlcontrols.currentPosition
             TrackBar2.Value = Media_Player.AxWindowsMediaPlayer1.Ctlcontrols.currentPosition
+            Label3.Text = Media_Player.AxWindowsMediaPlayer1.Ctlcontrols.currentPosition & " / " & Media_Player.AxWindowsMediaPlayer1.currentMedia.duration
             TrackBar2.Maximum = Media_Player.AxWindowsMediaPlayer1.currentMedia.duration
             ProgressBar2.Increment(1)
         End If
+
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click

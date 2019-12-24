@@ -35,12 +35,9 @@ Partial Class Media_Player
         Me.toolStripSeparator = New System.Windows.Forms.ToolStripSeparator()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.About_ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HelpToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ControlsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AxWindowsMediaPlayer1 = New AxWMPLib.AxWindowsMediaPlayer()
-        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.PlayToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PauseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -51,6 +48,7 @@ Partial Class Media_Player
         Me.ControlsToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
         Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.AxWindowsMediaPlayer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ContextMenuStrip1.SuspendLayout()
@@ -78,7 +76,7 @@ Partial Class Media_Player
         Me.OpenToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
         Me.OpenToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.O), System.Windows.Forms.Keys)
-        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
         Me.OpenToolStripMenuItem.Text = "&Open"
         '
         'toolStripSeparator
@@ -89,31 +87,20 @@ Partial Class Media_Player
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
         Me.ExitToolStripMenuItem.Text = "E&xit"
         '
         'About_ToolStripMenuItem
         '
-        Me.About_ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HelpToolStripMenuItem1, Me.ToolStripSeparator1, Me.AboutToolStripMenuItem})
+        Me.About_ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem})
         Me.About_ToolStripMenuItem.Name = "About_ToolStripMenuItem"
         Me.About_ToolStripMenuItem.Size = New System.Drawing.Size(52, 20)
         Me.About_ToolStripMenuItem.Text = "About"
         '
-        'HelpToolStripMenuItem1
-        '
-        Me.HelpToolStripMenuItem1.Name = "HelpToolStripMenuItem1"
-        Me.HelpToolStripMenuItem1.Size = New System.Drawing.Size(107, 22)
-        Me.HelpToolStripMenuItem1.Text = "Help"
-        '
-        'ToolStripSeparator1
-        '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(104, 6)
-        '
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(107, 22)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.AboutToolStripMenuItem.Text = "&About"
         '
         'ControlsToolStripMenuItem
@@ -144,52 +131,52 @@ Partial Class Media_Player
         'PlayToolStripMenuItem
         '
         Me.PlayToolStripMenuItem.Name = "PlayToolStripMenuItem"
-        Me.PlayToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PlayToolStripMenuItem.Size = New System.Drawing.Size(179, 22)
         Me.PlayToolStripMenuItem.Text = "Play"
         '
         'PauseToolStripMenuItem
         '
         Me.PauseToolStripMenuItem.Name = "PauseToolStripMenuItem"
-        Me.PauseToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PauseToolStripMenuItem.Size = New System.Drawing.Size(179, 22)
         Me.PauseToolStripMenuItem.Text = "Pause"
         '
         'StopToolStripMenuItem
         '
         Me.StopToolStripMenuItem.Name = "StopToolStripMenuItem"
-        Me.StopToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.StopToolStripMenuItem.Size = New System.Drawing.Size(179, 22)
         Me.StopToolStripMenuItem.Text = "Stop"
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(177, 6)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(176, 6)
         '
         'FastForwardFastFToolStripMenuItem
         '
         Me.FastForwardFastFToolStripMenuItem.Name = "FastForwardFastFToolStripMenuItem"
-        Me.FastForwardFastFToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.FastForwardFastFToolStripMenuItem.Size = New System.Drawing.Size(179, 22)
         Me.FastForwardFastFToolStripMenuItem.Text = "Fast Forward (FastF)"
         '
         'ToolStripSeparator3
         '
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(177, 6)
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(176, 6)
         '
         'ControlsToolStripMenuItem1
         '
         Me.ControlsToolStripMenuItem1.Name = "ControlsToolStripMenuItem1"
-        Me.ControlsToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.ControlsToolStripMenuItem1.Size = New System.Drawing.Size(179, 22)
         Me.ControlsToolStripMenuItem1.Text = "Controls"
         '
         'ToolStripSeparator4
         '
         Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
-        Me.ToolStripSeparator4.Size = New System.Drawing.Size(177, 6)
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(176, 6)
         '
         'ExitToolStripMenuItem1
         '
         Me.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1"
-        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(179, 22)
         Me.ExitToolStripMenuItem1.Text = "Exit"
         '
         'Media_Player
@@ -219,8 +206,6 @@ Partial Class Media_Player
     Friend WithEvents toolStripSeparator As ToolStripSeparator
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents About_ToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents HelpToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AxWindowsMediaPlayer1 As AxWMPLib.AxWindowsMediaPlayer
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
