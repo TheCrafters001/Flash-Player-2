@@ -30,6 +30,7 @@ Partial Class Form1
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -97,18 +98,28 @@ Partial Class Form1
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(12, 226)
+        Me.Button3.Location = New System.Drawing.Point(195, 226)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(360, 23)
+        Me.Button3.Size = New System.Drawing.Size(177, 23)
         Me.Button3.TabIndex = 2
         Me.Button3.Text = "About Page"
         Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(12, 226)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(177, 23)
+        Me.Button4.TabIndex = 3
+        Me.Button4.Text = "Help"
+        Me.Button4.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(384, 261)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
@@ -131,4 +142,5 @@ Partial Class Form1
     Friend WithEvents Button3 As Button
     Friend WithEvents RichTextBox2 As RichTextBox
     Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents Button4 As Button
 End Class

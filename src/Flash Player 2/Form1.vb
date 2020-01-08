@@ -18,4 +18,8 @@ Public Class Form1
         Flash_Player.Show()
         Me.Close()
     End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        HelpHome.Show()
+    End Sub
 End Class

@@ -117,4 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="RichTextBox1.Text" xml:space="preserve">
+    <value>==========================================
+= How to Use the Media Play Control Window         =
+==========================================
+You can use the Controls window to control the media player, and how it functions.
+
+Here is a basic overview:
+Pause Button = Pause Video
+Play Button = Resume Video
+Stop Button = Pause video, and send back to starting point
+Fast Forward Button = Fast Forward in video (Unusable in audio files)
+Rewind Button = Unused for the time being.
+Volume slider = Controls the volume of the player
+Volume Progress Bar = Shows the current volume.
+Progress Slider = Shows the progress. Seeking is currently unavaliable.
+Progress Progress Bar = Shows the current video progress.
+
+More options may be added in the future, and if there are any, they may not appear in this list.</value>
+  </data>
 </root>
