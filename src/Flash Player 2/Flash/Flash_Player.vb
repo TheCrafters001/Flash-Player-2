@@ -20,5 +20,10 @@
         AxShockwaveFlash1.Movie = Nothing
         AxShockwaveFlash1.EmbedMovie = Nothing
         AxShockwaveFlash1.Playing = False
+        AxShockwaveFlash1.LoadMovie(0, "")
+    End Sub
+
+    Private Sub Flash_Player_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

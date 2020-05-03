@@ -117,4 +117,21 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="RichTextBox1.Text" xml:space="preserve">
+    <value>
+Esta es la versión en español de TheCrafters001 Flash Player 2. Todas las traducciones se hicieron en Google Translate y no son precisas. Si desea contribuir con su traducción, visite mi página de GitHub.
+
+Este programa es software libre: puede redistribuirlo y / o modificarlo
+bajo los términos de la Licencia Pública General GNU publicada por
+Free Software Foundation, ya sea la versión 3 de la Licencia, o
+(a su elección) cualquier versión posterior.
+
+Este programa se distribuye con la esperanza de que sea útil,
+pero SIN NINGUNA GARANTÍA; sin siquiera la garantía implícita de
+COMERCIABILIDAD o APTITUD PARA UN PROPÓSITO EN PARTICULAR. Mira el
+Licencia pública general de GNU para más detalles.
+
+Debería haber recibido una copia de la Licencia Pública General de GNU
+junto con este programa. Si no, vea &lt;https://www.gnu.org/licenses/&gt;.</value>
+  </data>
 </root>

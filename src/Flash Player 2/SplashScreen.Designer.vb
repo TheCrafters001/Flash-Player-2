@@ -34,7 +34,7 @@ Partial Class SplashScreen
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(100, 48)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Copyright © 2019 TheCrafters001"
+        Me.Label1.Text = "Copyright © 2020 TheCrafters001"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'Label2

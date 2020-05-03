@@ -42,4 +42,8 @@
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Media_Player.AxWindowsMediaPlayer1.Ctlcontrols.fastReverse()
     End Sub
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        HelpMedia_Control_1.Show()
+    End Sub
 End Class

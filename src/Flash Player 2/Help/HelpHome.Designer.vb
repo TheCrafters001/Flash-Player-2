@@ -29,6 +29,7 @@ Partial Class HelpHome
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -59,6 +60,7 @@ Partial Class HelpHome
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.LinkLabel2)
         Me.GroupBox2.Controls.Add(Me.LinkLabel1)
         Me.GroupBox2.Controls.Add(Me.Label2)
         Me.GroupBox2.Location = New System.Drawing.Point(12, 69)
@@ -96,6 +98,16 @@ Partial Class HelpHome
         Me.Button1.Text = "Exit"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'LinkLabel2
+        '
+        Me.LinkLabel2.AutoSize = True
+        Me.LinkLabel2.Location = New System.Drawing.Point(6, 47)
+        Me.LinkLabel2.Name = "LinkLabel2"
+        Me.LinkLabel2.Size = New System.Drawing.Size(150, 13)
+        Me.LinkLabel2.TabIndex = 2
+        Me.LinkLabel2.TabStop = True
+        Me.LinkLabel2.Text = "How do I close a Flash game?"
+        '
         'HelpHome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -123,4 +135,5 @@ Partial Class HelpHome
     Friend WithEvents Button1 As Button
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents Label2 As Label
+    Friend WithEvents LinkLabel2 As LinkLabel
 End Class
